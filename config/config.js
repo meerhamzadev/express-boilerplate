@@ -3,17 +3,17 @@ require('dotenv').config();
 
 const config = {
   development: {
-    url: process.env.DEV_DATABASE_URL,
-    dialect: process.env.DEV_DB,
+    url: process.env.DATABASE_URL,
+    dialect: process.env.DB_USER,
     logging: false,
   },
   test: {
     url: process.env.TEST_DATABASE_URL,
-    dialect: process.env.TEST_DB
+    dialect: process.env.DB_USER
   },
   production: {
     url: process.env.PROD_DATABASE_URL,
-    dialect: process.env.PROD_DB
+    dialect: process.env.DB_USER
   }
 };
 
