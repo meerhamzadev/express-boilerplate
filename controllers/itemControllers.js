@@ -7,7 +7,7 @@ const getItems = async (req, res) => {
     })
     res.status(200).send(totalItems);
   } catch (err) {
-    res.status(5000).send(err)
+    res.status(500).send(err)
   }
 }
 
@@ -23,7 +23,7 @@ const addItem = async (req, res) => {
     });
   }
   catch (err) {
-    res.status(5000).send(err)
+    res.status(500).send(err)
   }
 }
 
