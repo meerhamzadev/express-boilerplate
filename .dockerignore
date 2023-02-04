@@ -1,4 +1,7 @@
 node_modules
 postgres-data
+docker-compose.yml
+.docker
 .vscode
 assets
+path

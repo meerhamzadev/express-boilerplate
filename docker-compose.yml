@@ -30,7 +30,10 @@ services:
     build:
       context: .
       dockerfile: .docker/Dockerfile
-    command: sh -c "npm run swagger-autogen && npm run dev"
+    command: sh -c "mkdir -p swagger && npm run dev"
+    volumes:
+      - .:/app
+      - /app/node_modules
     ports:
       - 3000:3000
     depends_on:

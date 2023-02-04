@@ -1,9 +1,10 @@
 FROM node:16-alpine
 WORKDIR /app
 
-COPY package.json package.json
+COPY package.json .
 
-RUN npm install
+RUN npm install -g npm &&\
+  npm install
 
 COPY . .
 
