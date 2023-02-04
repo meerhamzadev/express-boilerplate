@@ -9,7 +9,8 @@ const config = {
   },
   test: {
     url: process.env.TEST_DATABASE_URL,
-    dialect: process.env.DB_USER
+    dialect: process.env.DB_USER,
+    storage: process.env.STORAGE 
   },
   production: {
     url: process.env.PROD_DATABASE_URL,
